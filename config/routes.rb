@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
-  get 'sessions/new'
   root to: 'sessions#new'
+
+  get 'sessions/new'
+  post '/auth/apple/callback', to: 'sessions#callback'
+  delete 'sessions', to: 'sessions#destroy'
+  get 'me', to: 'users#show'
 end

@@ -1,0 +1,50 @@
+<%= button_to 'Sign out', sessions_path, { method: :delete } %>
+
+<h2>uid</h2>
+<dl>
+  <dt>uid</dt>
+  <dd><%= @uid %></dd>
+</dl>
+
+<h2>info</h2>
+<dl>
+  <dt>sub</dt>
+  <dd><%= @info["sub"] %></dd>
+  <dt>email</dt>
+  <dd><%= @info["email"] %></dd>
+  <dt>first_name</dt>
+  <dd><%= @info["first_name"] %></dd>
+  <dt>last_name</dt>
+  <dd><%= @info["last_name"] %></dd>
+</dl>
+
+<h2>credentials</h2>
+<dl>
+  <dt>token</dt>
+  <dd><%= @credentials["token"] %></dd>
+  <dt>refresh_token</dt>
+  <dd><%= @credentials["refresh_token"] %></dd>
+  <dt>expires_at</dt>
+  <dd><%= @credentials["expires_at"] %></dd>
+  <dt>expires</dt>
+  <dd><%= @credentials["expires"] %></dd>
+</dl>
+
+<h2>raw_info</h2>
+<dl>
+  <dt>iss</dt>
+  <dd><%= @raw_info["iss"] %></dd>
+  <dt>aud</dt>
+  <dd><%= @raw_info["aud"] %></dd>
+  <dt>exp</dt>
+  <dd><%= @raw_info["exp"] %></dd>
+  <dt>iat</dt>
+  <dd><%= @raw_info["iat"] %></dd>
+  <dt>sub</dt>
+  <dd><%= @raw_info["sub"] %></dd>
+  <dt>at_hash</dt>
+  <dd><%= @raw_info["at_hash"] %></dd>
+  <dt>auth_time</dt>
+  <dd><%= @raw_info["auth_time"] %></dd>
+</dl>
+

@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## setup
 
-Things you may want to cover:
+```sh
+cp .env.sample .env
+# put your Sign in with Apple's configurations to .env
+```
 
-* Ruby version
+```sh
+bin setup
+bin rails server
+```
 
-* System dependencies
+## links
 
-* Configuration
+- https://developer.apple.com/
+- https://appleid.apple.com/
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

@@ -12,7 +12,10 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 
+gem 'omniauth-apple'
+
 group :development, :test do
+  gem 'dotenv-rails'
   gem 'pry-rails'
   gem 'pry-byebug'
   gem 'pry-stack_explorer'
